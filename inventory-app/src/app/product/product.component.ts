@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-//import { Product } from './product.model';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-product',
@@ -8,15 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class ProductComponent implements OnInit {
- //@Input()
-  //product: Product;
+ @Input() product: Product;
   constructor() {
-    // this.product = new Product(
-    //   'NICEHAT',
-    //   'A Nice Black Hat',
-    //   '/assets/images/products/black-hat.jpg',
-    //   ['Men', 'Accessories', 'Hats'],
-    //   29.99);
   }
   ngOnInit() {
   }
