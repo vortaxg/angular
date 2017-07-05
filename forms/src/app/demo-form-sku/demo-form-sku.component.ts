@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DemoFormSkuComponent implements OnInit {
 
   constructor() { }
-
+    onSubmit(form: any): void {
+    console.log('you submitted value:', form);
+  }
   ngOnInit() {
   }
 
